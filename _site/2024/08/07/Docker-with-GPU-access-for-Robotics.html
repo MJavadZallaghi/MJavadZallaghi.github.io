@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Docker with gpu access for robotics</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Docker with gpu access for robotics</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Docker with gpu access for robotics" />
+<meta name="author" content="Mohammad Javad Zallaghi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware." />
+<meta property="og:description" content="#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-07T00:00:00+03:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Docker with gpu access for robotics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Mohammad Javad Zallaghi"},"dateModified":"2024-08-07T00:00:00+03:30","datePublished":"2024-08-07T00:00:00+03:30","description":"#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.","headline":"Docker with gpu access for robotics","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/08/07/Docker-with-GPU-access-for-Robotics.html"},"url":"/2024/08/07/Docker-with-GPU-access-for-Robotics.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/about.html" >About</a>
+    
+      <a href="/blog.html" >Blog</a>
+    
+</nav>
+    <h1>Docker with gpu access for robotics</h1>
+<p>07 Aug 2024 - Mohammad Javad Zallaghi</p>
+
+<p>#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.</p>
+
+<p>In hashtag#ROS 2 ecosystem, for simulation, we use hashtag#Gazebo. But you may ask, how to model the robot and import it in Gazebo?</p>
+
+<p>🐢 For modelling the robot, we use URDF format. It’s kind of xml file that describe the links, joints, geometry, and collision elements of the robot.</p>
+
+<p>🤷‍♂️ Should you create the URDF manually? Definitely no — doing that manually is not possible. So, what is the solution for creating URDFs and loading the robot in Gazebo? I have the answer if you are intersted in using CAD for creating your robot simulation.</p>
+
+<p>🌱 I’ve done it, you can see the images from CAD, to ROS 2 package, and finally the Gazebo simulation (see the attached images). This is my instruction for creating the URDF and Gazebo simulation for your robot:</p>
+
+<ol>
+  <li>CAD:</li>
+</ol>
+
+<p>1.1: Model the parts of your robot using FreeCAD software and its part design workbench.</p>
+
+<p>1.2: Define proper LCS (local coordinate frame) on each part where the joint will be defined later.</p>
+
+<ol>
+  <li>URDF and ROS2:</li>
+</ol>
+
+<p>2.1: Install FreeCAD.CROSS workbench inside FreeCAD. It’s a tool for easy URDF generation from your robot.</p>
+
+<p>2.2: Define the links using CROSS. Add created parts of your robot to the links.</p>
+
+<p>2.3: Define the joints using CROSS. Define parent and child links, and the position of the joint.</p>
+
+<p>2.4: Define the robot material in created robot object from CROSS and use the CROSS tool for mass and inertial property calculator of the link.</p>
+
+<p>2.5: Export ROS 2 package of your robot modelled using FreeCAD and CROSS. It will create the URDF, mesh files, and Gazebo and hashtag#Rviz launch files for your robot.</p>
+
+<ol>
+  <li>Simulation:</li>
+</ol>
+
+<p>3.1: Move the generated ROS 2 package to your ROS2 work space.</p>
+
+<p>3.2: Build the package using colcon build.</p>
+
+<p>3.3: Launch the Gazebo launch file of the package.</p>
+
+<p>3.4: Enjoy your simulation and echo state of the joints of the robot using ros2 topic echo /joint_states</p>
+
+<p>✅ If you are interested to learn this by a YouTube video, give me a comment to create it for you. 😊</p>
+
+  </body>
+</html>
