@@ -1,6 +1,4 @@
 ---
-title: Docker with gpu access for robotics
-date: 2024-08-07 00:00:00 Z
 layout: post
 author: Mohammad Javad Zallaghi
 ---
