@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.subtitle }}</p>
+        </div>
+
+        <div class="content">
+            <div class="profile-section">
+                <h2>Profile</h2>
+                <p><strong>About Mohammad Javad, and his current activities</strong></p>
+                <ul>
+                    {% for item in page.about_mjz %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Links to Mohammad Javad</strong></p>
+                <ul>
+                    {% for item in page.links_mjz %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Pinned Projects</strong></p>
+                <ul>
+                    {% for item in page.pinned_projects %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h2>Curriculum Vitae</h2>
+                <p><strong>Educational background</strong></p>
+                <ul>
+                    {% for item in page.education %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Research and Professional Roles</strong></p>
+                <ul>
+                    {% for item in page.experience %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Publications</strong></p>
+                <ul>
+                    {% for item in page.pubs %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Projects</strong></p>
+                <ul>
+                    {% for item in page.projects %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Courses</strong></p>
+                <ul>
+                    {% for item in page.courses %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Hard Skills</strong></p>
+                <ul>
+                    {% for item in page.hard_skills %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Soft Skills</strong></p>
+                <ul>
+                    {% for item in page.soft_skills %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Teaching Experience</strong></p>
+                <ul>
+                    {% for item in page.teaching %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Honors and Rewards</strong></p>
+                <ul>
+                    {% for item in page.honors_and_rewards %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>References</strong></p>
+                <ul>
+                    {% for item in page.refs %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+        </div>
+    </div>
+</body>
+
+</html>
