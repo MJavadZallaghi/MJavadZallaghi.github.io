@@ -1,5 +1,7 @@
 ---
 layout: post
+title: Docker with GPU-access for Robotics
+date: 2024-08-07
 author: Mohammad Javad Zallaghi
 ---
 
@@ -11,7 +13,11 @@ In hashtag#ROS 2 ecosystem, for simulation, we use hashtag#Gazebo. But you may a
 
 🤷‍♂️ Should you create the URDF manually? Definitely no — doing that manually is not possible. So, what is the solution for creating URDFs and loading the robot in Gazebo? I have the answer if you are intersted in using CAD for creating your robot simulation.
 
-🌱 I've done it, you can see the images from CAD, to ROS 2 package, and finally the Gazebo simulation (see the attached images). This is my instruction for creating the URDF and Gazebo simulation for your robot:
+🌱 I've done it, you can see the images from CAD, to ROS 2 package, and finally the Gazebo simulation (see the attached images). 
+
+![Access to the GPU inside the docker container](/assets/images/gpu_inside_docker.png)
+
+This is my instruction for creating the URDF and Gazebo simulation for your robot:
 
 1. CAD:
 
@@ -39,6 +45,6 @@ In hashtag#ROS 2 ecosystem, for simulation, we use hashtag#Gazebo. But you may a
 
 3.3: Launch the Gazebo launch file of the package.
 
-3.4: Enjoy your simulation and echo state of the joints of the robot using ros2 topic echo /joint_states 
+3.4: Enjoy your simulation and echo state of the joints of the robot using ```ros2 topic echo /joint_states```
 
 ✅ If you are interested to learn this by a YouTube video, give me a comment to create it for you. 😊

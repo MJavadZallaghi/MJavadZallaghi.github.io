@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-18T12:15:09+03:30</updated><id>/feed.xml</id><entry><title type="html">Docker with gpu access for robotics</title><link href="/2024/08/07/Docker-with-GPU-access-for-Robotics.html" rel="alternate" type="text/html" title="Docker with gpu access for robotics" /><published>2024-08-07T00:00:00+03:30</published><updated>2024-08-07T00:00:00+03:30</updated><id>/2024/08/07/Docker%20with%20GPU%20access%20for%20Robotics</id><content type="html" xml:base="/2024/08/07/Docker-with-GPU-access-for-Robotics.html"><![CDATA[<p>#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-18T14:45:52+03:30</updated><id>/feed.xml</id><entry><title type="html">Docker with GPU-access for Robotics</title><link href="/2024/08/07/Docker-with-GPU-access-for-Robotics.html" rel="alternate" type="text/html" title="Docker with GPU-access for Robotics" /><published>2024-08-07T00:00:00+03:30</published><updated>2024-08-07T00:00:00+03:30</updated><id>/2024/08/07/Docker%20with%20GPU%20access%20for%20Robotics</id><content type="html" xml:base="/2024/08/07/Docker-with-GPU-access-for-Robotics.html"><![CDATA[<p>#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.</p>
 
 <p>In hashtag#ROS 2 ecosystem, for simulation, we use hashtag#Gazebo. But you may ask, how to model the robot and import it in Gazebo?</p>
 
@@ -6,7 +6,11 @@
 
 <p>🤷‍♂️ Should you create the URDF manually? Definitely no — doing that manually is not possible. So, what is the solution for creating URDFs and loading the robot in Gazebo? I have the answer if you are intersted in using CAD for creating your robot simulation.</p>
 
-<p>🌱 I’ve done it, you can see the images from CAD, to ROS 2 package, and finally the Gazebo simulation (see the attached images). This is my instruction for creating the URDF and Gazebo simulation for your robot:</p>
+<p>🌱 I’ve done it, you can see the images from CAD, to ROS 2 package, and finally the Gazebo simulation (see the attached images).</p>
+
+<p><img src="/assets/images/gpu_inside_docker.png" alt="Access to the GPU inside the docker container" /></p>
+
+<p>This is my instruction for creating the URDF and Gazebo simulation for your robot:</p>
 
 <ol>
   <li>CAD:</li>
@@ -40,6 +44,6 @@
 
 <p>3.3: Launch the Gazebo launch file of the package.</p>
 
-<p>3.4: Enjoy your simulation and echo state of the joints of the robot using ros2 topic echo /joint_states</p>
+<p>3.4: Enjoy your simulation and echo state of the joints of the robot using <code class="language-plaintext highlighter-rouge">ros2 topic echo /joint_states</code></p>
 
 <p>✅ If you are interested to learn this by a YouTube video, give me a comment to create it for you. 😊</p>]]></content><author><name>Mohammad Javad Zallaghi</name></author><summary type="html"><![CDATA[#Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.]]></summary></entry></feed>
