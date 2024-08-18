@@ -2,3 +2,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/

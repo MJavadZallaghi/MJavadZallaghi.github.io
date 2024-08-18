@@ -7,6 +7,12 @@ body {
     padding: 0;
 }
 
+/* Center the heading on the project index page */
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 30px; /* Adds some space below the heading */
+}
+
 /* Container */
 .container {
     width: 80%;
@@ -84,7 +90,7 @@ body {
 
 
 
- 
+
 
  /* Navigation Bar */
 .navbar {
@@ -188,4 +194,150 @@ body {
 
 .post-footer p {
     margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Layout */
+/* Project Layout */
+.project {
+    max-width: 800px;
+    margin: 40px auto; /* Center the container and add vertical margin */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+
+.project-header h1 {
+    color: #28a745; /* Green title color */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.project-affiliation {
+    font-size: 1.1em;
+    color: #b5b5b5; /* Light gray for affiliation */
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+.project-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.project-footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Projects Index Page */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+    margin: 20px; /* Adds space around the entire grid */
+    padding: 20px; /* Adds padding inside the grid container */
+}
+
+.project-summary {
+    padding: 20px; /* Adds padding inside each project summary */
+    background-color: #1a1a2e; /* Background color for each project summary */
+    color: #e0e0e0; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow around each summary */
+    margin: 10px 0; /* Adds vertical margin between project summaries */
+}
+
+.project-summary h2 a {
+    color: #28a745; /* Color for the project title links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.project-summary p {
+    margin-bottom: 10px; /* Adds space below paragraphs inside project summaries */
+}
+
+
+
+
+
+
+
+
+/* Project Status Indicator */
+.project-status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.status-light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.status-light.finished {
+    background-color: #28a745; /* Green for finished */
+}
+
+.status-light.ongoing {
+    background-color: #ffc107; /* Yellow for ongoing */
+}
+
+.status-text.finished {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.status-text.ongoing {
+    font-weight: bold;
+    color: #ffc107;
 }

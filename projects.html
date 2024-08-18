@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Projects: Mohammad Javad Zallaghi"
+---
+<h1>Projects: Where Mohammad Javad has contributed as one of the main contributers and an expert in the team!</h1>
+<div class="projects-list">
+    {% for project in site.projects %}
+    <div class="project-summary">
+        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+        <p>{{ project.affiliation }}</p>
+        <p>{{ project.description | truncate: 150 }}</p>
+        <div class="project-status">
+            <span class="status-light {% if project.status == 'finished' %}finished{% else %}ongoing{% endif %}"></span>
+            <span class="status-text {% if project.status == 'finished' %}finished{% else %}ongoing{% endif %}">{{ project.status | capitalize }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>

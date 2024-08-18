@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="project">
+    <header class="project-header">
+        <h1>{{ page.title }}</h1>
+        <p class="project-affiliation">{{ page.affiliation }}</p>
+    </header>
+
+    <div class="project-status">
+        <span class="status-light {% if page.status == 'finished' %}finished{% else %}ongoing{% endif %}"></span>
+        <span class="status-text {% if page.status == 'finished' %}finished{% else %}ongoing{% endif %}">{{ page.status | capitalize }}</span>
+    </div>
+
+    <div class="project-content">
+        <p>{{ page.description }}</p>
+
+        {% if page.media %}
+        <div class="project-media">
+            {% for item in page.media %}
+                <div class="media-item">
+                    {% if item.type == "image" %}
+                        <img src="{{ item.url }}" alt="{{ item.alt }}" />
+                    {% elsif item.type == "video" %}
+                        <video controls>
+                            <source src="{{ item.url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <footer class="project-footer">
+        <a href="/projects" class="back-link">&larr; Back to Projects</a>
+    </footer>
+</article>
