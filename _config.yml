@@ -8,3 +8,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  tags:
+    output: true
+    permalink: /tags/:title/
