@@ -3,7 +3,7 @@ layout: post
 title: Docker with GPU-access for Robotics
 date: 2024-08-07
 author: Mohammad Javad Zallaghi
-tags: [Docker, GPU]
+tags: [docker, gpu]
 ---
 
 #Roboticists would like to create robots, simulate them, develop their software, then deploy on the hardware.
