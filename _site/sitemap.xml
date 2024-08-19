@@ -6,7 +6,7 @@
 </url>
 <url>
 <loc>/projects/project_aerial_robotics/</loc>
-<lastmod>2024-08-18T20:28:07+03:30</lastmod>
+<lastmod>2024-08-19T19:00:19+03:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>
@@ -19,5 +19,11 @@
 </url>
 <url>
 <loc>/projects.html</loc>
+</url>
+<url>
+<loc>/tags/Docker/</loc>
+</url>
+<url>
+<loc>/tags/GPU/</loc>
 </url>
 </urlset>

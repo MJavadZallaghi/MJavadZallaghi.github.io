@@ -24,3 +24,4 @@ bundle exec jekyll serve
 - [ ] Add all previous posts to the blog from your LinkedIn archive
 - [ ] Design a simple but beautiful home page
 - [ ] Think to have open source courses with donation option :)
+- [x] Create tags for the blog posts, and index them
