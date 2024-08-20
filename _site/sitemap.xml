@@ -5,8 +5,12 @@
 <lastmod>2024-08-07T00:00:00+03:30</lastmod>
 </url>
 <url>
+<loc>/2024/08/20/rl-ch2-multi-armed-bandits.html</loc>
+<lastmod>2024-08-20T00:00:00+03:30</lastmod>
+</url>
+<url>
 <loc>/projects/project_aerial_robotics/</loc>
-<lastmod>2024-08-19T20:03:20+03:30</lastmod>
+<lastmod>2024-08-20T12:22:55+03:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>
@@ -25,5 +29,8 @@
 </url>
 <url>
 <loc>/tags/gpu/</loc>
+</url>
+<url>
+<loc>/tags/rl/</loc>
 </url>
 </urlset>
